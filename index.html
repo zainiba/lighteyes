@@ -5,6 +5,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"
+    ></script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -12,67 +17,23 @@
       crossorigin="anonymous"
     />
 
-    <!-- These 3 scripts are rewuired for the model viewer. -->
-    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-    <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js"></script>
-    <!-- These controls the size and shape of the model viewer window. It can be housed in you CSS as well. -->
-    <style>
-      model-viewer {
-        margin: auto;
-        width: 50%;
-        height: 400px;
-      }
-      p {
-        color: black;
-        text-align: center;
-      }
-      h1 {
-        font-family: "Times New Roman", Times, serif;
-        font-style: bold;
-        color: black;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+<link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
   </head>
   <body>
-    <h1>Welcome to Society<br />Don't forget your balloon!</h1>
-    <!-- This is the model veiwer element, inside of which I place the path to the model. -->
+    <div class="container">
+      <div id="typewriter"></div>
+      <script src="script.js"></script>
+        <div class="vertical-center">
 
-    <div class="grid-container">
-      <model-viewer
-        class="a"
-        src="https://zainiba.github.io/lighteyes/2eye.gltf"
-        alt="A 3D model of an astronaut"
-        background-color="#87CEFA"
-        shadow-intensity=".5"
-        shadow-softness="1.5"
-        camera-controls
-        auto-rotate
-      ></model-viewer>
-      <div class="container">
-        <br />
-        <p>
-          Location Tracking has become so integrated in our lives, we don't
-          think twice about apps asking for tracking permissions. Often in
-          social media apps it is used as another method of connecting with
-          others. When you share your location with others via social media,
-          Find My Friends, or things of that sort you are allowing others to
-          expirence those things with you. Sharing location with family or
-          friends can give everyone peace of mind but it can also stimulate
-          feelings of anxiety and obsession. Users began to rely heavily on
-          technolgy that has limits to tell them where others are and when
-          things began to go awry it can become an unhealthy fixation.
-        </p>
-      </div>
+      <div id="BuyNow" style="display:none">
+   <a href="https://zainiba.github.io/lighteyes/model.html"><button type="button">Take Balloon</button>
+
     </div>
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
-    ></script>
+    </div>
+    </div>
+   
   </body>
 </html>
