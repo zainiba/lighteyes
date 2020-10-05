@@ -8,6 +8,68 @@ model-viewer {
   width: 100%;
   height: 100%;
 }
+.front1{
+  font-size: 60px;
+  font-family: 'Zilla Slab';
+  text-align:center;
+  position: absolute;  
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.front2{
+  font-family: 'Montserrat';
+  position: absolute;  
+  text-align:center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.front3{
+  font-family: 'Montserrat';
+  position: absolute;  
+  text-align:center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.state{
+  color: black;
+  font-family: 'Montserrat';
+  text-align:left;
+  text-indent: 25px;
+}
+h3{
+  font-family: 'Zilla Slab';
+  text-align:center;
+
+  }
+}
+button{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 15px 25px;
+  cursor: pointer;
+/*   position: absolute;  
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+}
+
+button:active {
+  box-shadow: 0 1px #666;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 .grid-container{
   background-color: #fff;
@@ -60,3 +122,14 @@ model-viewer {
     grid-row: 5 / 7;
   }
 }
+  /* Icon when the collapsible content is shown */
+  .btn:after {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    margin-left: 15px;
+  }
+  /* Icon when the collapsible content is hidden */
+  .btn.collapsed:after {
+    content: "\e080";
+  }
